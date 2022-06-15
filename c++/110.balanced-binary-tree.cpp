@@ -24,6 +24,11 @@ struct TreeNode {
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+// Accepted
+// 228/228 cases passed (16 ms)
+// Your runtime beats 66.28 % of cpp submissions
+// Your memory usage beats 26.04 % of cpp submissions (21 MB)
 #include <algorithm>
 class Solution {
 public:
