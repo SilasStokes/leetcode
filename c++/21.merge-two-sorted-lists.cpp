@@ -3,6 +3,15 @@
  *
  * [21] Merge Two Sorted Lists
  */
+struct ListNode {
+	int val;
+	ListNode *next;
+	ListNode() : val(0), next(nullptr) {}
+	ListNode(int x) : val(x), next(nullptr) {}
+	ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+
+
 
 // @lc code=start
 /**
@@ -15,14 +24,6 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-// struct ListNode {
-// 	int val;
-// 	ListNode *next;
-// 	ListNode() : val(0), next(nullptr) {}
-// 	ListNode(int x) : val(x), next(nullptr) {}
-// 	ListNode(int x, ListNode *next) : val(x), next(next) {}
-// };
-
 class Solution {
 public:
 	// time : O(n)
