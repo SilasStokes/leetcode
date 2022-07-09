@@ -30,7 +30,7 @@ class Solution:
             for y_off, x_off in proximity_check:
                 dy = y + y_off
                 dx = x + x_off
-                if 0 <= dy < height and 0 <= dx < width and mat[dy][dx] ==-1:
+                if 0 <= dy < height and 0 <= dx < width and mat[dy][dx] == -1:
                     mat[dy][dx] = mat[y][x] + 1
                     zeros.append((dy, dx))
         return mat
