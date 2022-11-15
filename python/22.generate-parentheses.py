@@ -53,6 +53,27 @@ from typing import List
 
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
+        parens = []
+        stack = []
+        def generate(open = 0, close = 0):
+            if open == close == n:
+                parens.append(''.join(stack))
+            if open < n :
+                stack.append('(')
+                generate(open + 1, close)
+                stack.pop()
+            if close < open:
+                stack.append(')')
+                generate(open, close +1 )
+                stack.pop()
+            return
+
+        generate()
+        return parens
+
+
+
+
 
 
         

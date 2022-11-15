@@ -1,3 +1,7 @@
 
 *_sol.*
 test.cpp
+.vscode
+__pycache__
+a.out
+test*
