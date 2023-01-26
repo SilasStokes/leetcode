@@ -36,10 +36,19 @@
 # 
 # 
 #
+from typing import List
 
 # @lc code=start
 class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+        res = []
+
+        def dfs(i, sub):
+
+            making arb changes for git
+
+
+        return res
         
 # @lc code=end
 
