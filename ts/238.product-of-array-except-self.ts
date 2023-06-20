@@ -69,17 +69,17 @@ function productExceptSelf(nums: number[]): number[] {
 // @lc code=end
 
 
-// function productExceptSelf(nums: number[]): number[] {
-//     let products = new Array(nums.length).fill(1);
-//     let prefix = 1;
-//     for( let i = 0; i < nums.length; i ++) {
-//         products[i] = prefix
-//         prefix *= nums[i]
-//     }
-//     let post = 1;
-//     for (let i = nums.length - 1; i > -1; i--) {
-//         products[i] *= post
-//         post *= nums[i]
-//     }
-//     return products
-// };
+function productExceptSelf(nums: number[]): number[] {
+    let products = new Array(nums.length).fill(1);
+    let prefix = 1;
+    for( let i = 0; i < nums.length; i ++) {
+        products[i] = prefix
+        prefix *= nums[i]
+    }
+    let post = 1;
+    for (let i = nums.length - 1; i > -1; i--) {
+        products[i] *= post
+        post *= nums[i]
+    }
+    return products
+};
